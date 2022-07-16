@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Nunmeros</title>
+</head>
+<body>
+    <h1>Valor total da Conta</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <h1>Valor da gorjeta</h1>
+    <input type="number" name="txtn2" id="txtn2">
+    
+    <div >
+        <h1 id="resultado">total da conta</h1>
+    </div>
+    <button type="button" value="Somar" onclick="somar()">Somar</button>
+
+
+    <h1>Quantidade de pessoas</h1>
+    <input type="number" name="pessoas" id='pessoas'>
+    <h1>Valor Por Pessoa</h1>
+    <div>
+        <h2 id="valorpessoa">p/pesso</h2>
+    </div>
+    <button type="button" value="Dividir" onclick="somar()">Dividir</button>
+
+    
+    <script>
+
+           
+
+        function somar(){
+            var tn1 = window.document.getElementById('total-conta')
+            var tn2 = window.document.getElementById('customp')
+            var pessoas = window.document.getElementById('pessoa_valor')
+            var resultado = window.document.getElementById('valor_da_gorjeta')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(pessoas.value)
+            var n2 = 1 + (n2/100)
+            var s = (n1 * n2)
+            valor_da_gorjeta.innerText = s
+            var t = s / n3
+            total_gorjeta_valor.innerText = t
+
+            var pessoas = window.document.getElementById('pessoas')
+        }
+
+
+
+        
+
+        
+
+    </script>
+</body>
+</html>

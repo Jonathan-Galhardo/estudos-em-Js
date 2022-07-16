@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var salario = Number(prompt('Qual o seu salário?') )
+        salario.toFixed(2).replace('.',',')
+        document.writeln('Seu Salário é:' + salario.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'}))
+         
+        var despesa = Number(prompt('Qual sua despesa mensal?'))
+        despesa.toFixed(2).replace('.',',')
+        document.writeln('<br> Sua Despesa é:' + despesa.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'}))
+        
+        var resultado = (salario - despesa)
+        document.writeln('<br>O resultado financeiro do seu mês é ' + resultado.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})) 
+    </script>
+</body>
+</html>
