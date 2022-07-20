@@ -33,12 +33,3 @@ function contar() {
         
     }
 }
-      
-       
-        
-
-        //for(let c = i; c <= f; c = c + p){
-        //    res.innerHTML = {$}c
-        //}
-  //  }
-
