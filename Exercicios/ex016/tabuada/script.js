@@ -20,3 +20,24 @@ function contar() {
     }
         
 }
+
+let num = [3,5,6,9,25,4,4,8,12,57]
+num.sort()
+
+console.log(Math.max(...num)) 
+console.log(Math.min(...num)) 
+console.log(num.indexOf(3))
+
+function ArrayAvg(num) {
+    let i = 0, summ = 0, ArrayLen = num.length;
+    while (i < ArrayLen) {
+        summ = summ + num[i++];
+}
+    return summ / ArrayLen;
+}
+
+let a = ArrayAvg(num);
+console.log(a)
+
+
+
